@@ -22,6 +22,7 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 				SinglyLinkedList next = new SinglyLinkedList();
 				next.data = data;
 				temp.next = next;
+				break;
 			}
 			temp = temp.next;
 		} while(temp != null);
