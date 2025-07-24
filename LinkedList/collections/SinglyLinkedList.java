@@ -1,8 +1,8 @@
 package collections;
-
+// SinglyLinkedListNode
 public class SinglyLinkedList implements LinkedList<Integer> {
 	public SinglyLinkedList next;
-	public Integer data;
+	public int data; // Integer is a wrapper class for int.
 
 	// for, while, do...while()
 	// while(predicate){}
@@ -12,9 +12,12 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 	// for (int i : array) {}
 	// do...while(predicate)
 	// break; continue;
-	
+
+
 	public void addNode(Integer data) {
 		SinglyLinkedList temp = this;
+		// this.addnode(data);
+		// this is the reference of the object that has been used to invoke "addNode()" method
 		do {
 			// && is a logical operation in java
 			// & is a bitwise operation in java
@@ -32,4 +35,10 @@ public class SinglyLinkedList implements LinkedList<Integer> {
         public int sizeOf(){return -1;}
         public Integer find(){return -1;}
         public void replace(){}
+
+	public static void main(String[] args) {
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.addNode(10);
+		// this refers to the object that is used to call this method
+	}	
 }
