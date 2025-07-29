@@ -1,4 +1,3 @@
-import collections.LinkedList;
 import collections.*;
 
 public class Main {
@@ -9,7 +8,7 @@ public class Main {
 		head.addNode(30);
 		head.addNode(40);
 		head.addNode(50);
-		
+		head.delete(40);
 		SinglyLinkedList temp = (SinglyLinkedList) head;	
 		while(temp != null) {
 			System.out.println(temp.data);
