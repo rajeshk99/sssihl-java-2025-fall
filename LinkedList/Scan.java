@@ -6,7 +6,7 @@ public class Scan {
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			System.out.print("Give me an input to print: ");
-			String string = br.readLine();
+			Integer string = Integer.parseInt(br.readLine());
 			System.out.println(string);
 	
 			Scanner s = new Scanner(System.in);
