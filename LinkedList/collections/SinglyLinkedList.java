@@ -30,8 +30,10 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 			temp = temp.next;
 		} while(temp != null);
 	}
-
-        public void deleteNode(){}
+	public Linkedlist find()
+        public void deleteNode(Lint x){
+		
+	}
         public int sizeOf(){return -1;}
         public Integer find(){return -1;}
         public void replace(){}
