@@ -60,6 +60,9 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 	public static void main(String[] args) {
 		SinglyLinkedList linkedList = new SinglyLinkedList();
 		linkedList.addNode(10);
+		linkedList.addNode(20);
+		linkedList.addNode(30);
+		linkedList.deleteNode(20);
 		// this refers to the object that is used to call this method
 	}	
 }
