@@ -30,9 +30,9 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 			temp = temp.next;
 		} while(temp != null);
 	}
-	public SinglyLinkedList find(SinglyLinkedList head , int x)
+	public SinglyLinkedList find(int x)
 	{
-		SinglyLinkedList t = head;
+		SinglyLinkedList t = this;
 		if(t.data == x)
 			return t;
 		while(t != null)
@@ -45,8 +45,8 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 		}
 		return null;
 	}
-        public void deleteNode(SinglyLinkedList head,int x){
-		SinglyLinkedList f = find(head,x);
+        public void deleteNode(int x){
+		SinglyLinkedList f = find(this,x);
 		if(f==null){
 		System.out.println("Not found !");
 		return;}
