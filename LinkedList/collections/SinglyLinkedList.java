@@ -33,17 +33,25 @@ public class SinglyLinkedList implements LinkedList<Integer> {
 	public SinglyLinkedList find(SinglyLinkedList head , int x)
 	{
 		SinglyLinkedList t = head;
+		if(t.data == x)
+			return t;
 		while(t != null)
 		{
-		  if(t.data == x)
-			  return t;
-			t = t.next;
+		  if(t.next.data == x)
+			  return t;     //returning the previous node where x is found 
+		  t = t.next;   
+		 if(t.next == null)
+			return null;
 		}
 		return null;
 	}
         public void deleteNode(SinglyLinkedList head,int x){
 		SinglyLinkedList f = find(head,x);
-		
+		if(f==null){
+		System.out.println("Not found !");
+		return;}
+		f.next = f.next.next;
+		return;
 	}
         public int sizeOf(){return -1;}
         public Integer find(){return -1;}
